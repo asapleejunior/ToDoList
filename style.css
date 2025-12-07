@@ -1,0 +1,161 @@
+/* Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: cursive sans-serif;
+}
+
+@font-face {
+  font-family: "myr-cond";
+  src: url("assets/MyriadPro-Cond.otf");
+}
+
+:root {
+  --text-color: #E0E0E0;
+}
+
+body {
+  height: 100vh;
+  background-image: url(assets/img/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.header-title {
+  font-size: 75px;
+  font-family: myr-cond;
+  color: var(--text-color);
+  text-align: center;
+}
+
+.container {
+  width: 50%;
+  margin-top: 7em;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  border-bottom: 4px solid rgb(249, 230, 146);
+}
+
+.content {
+  display: 1 1 0%;
+  width: 90%;
+}
+
+.item .content .text {
+  font-size: 1.125rem;
+  width: 100%;
+  border-color: transparent;
+}
+
+.item .content .text:hover {
+  cursor: context-menu;
+}
+
+.item .actions {
+  display: flex;
+}
+
+.item .actions button {
+  margin-left: 0.5rem;
+  font-size: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  row-gap: 5px;
+  width: 90px;
+  height: 30px;
+  /* width: 5rem;
+  height: 5rem; */
+}
+
+
+  /* Extra extra large (≤1400px) */
+  @media (max-width: 1400px) {
+
+    /* font-size: 17px; */
+    .container {
+      width: 60%;
+    }
+
+    .header-title {
+      font-size: 75px;
+      font-family: myr-cond;
+      color: var(--text-color);
+      text-align: center;
+    }
+  }
+
+  /* Extra large (≤1200px) */
+  @media (max-width: 1200px) {
+
+    /* font-size: 16px; */
+    .container {
+      width: 70%;
+
+    }
+
+    .header-title {
+      font-size: 55px;
+      font-family: myr-cond;
+      color: var(--text-color);
+      text-align: center;
+    }
+  }
+
+  /* Large (≤992px) */
+  @media (max-width: 992px) {
+
+    /* font-size: 15px; */
+    .container {
+      width: 80%;
+
+    }
+
+    .header-title {
+      font-size: 55px;
+      font-family: myr-cond;
+      color: var(--text-color);
+      text-align: center;
+    }
+  }
+
+  /* Medium (≤768px) */
+  @media (max-width: 768px) {
+
+    /* font-size: 14px; */
+    .container {
+      width: 90%;
+
+    }
+
+    .header-title {
+      font-size: 45px;
+      font-family: myr-cond;
+      color: var(--text-color);
+      text-align: center;
+    }
+  }
+
+  /* Small (≤576px) */
+  @media (max-width: 576px) {
+
+    /* font-size: 13px; */
+    .container {
+      width: 90%;
+
+    }
+
+    .header-title {
+      font-size: 45px;
+      font-family: myr-cond;
+      color: var(--text-color);
+      text-align: center;
+    }
+  }
